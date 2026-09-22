@@ -1,3 +1,4 @@
+import Login from "./Login";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
-          <button>Login</button>
+
+          <button>
+            Login
+          </button>
         </div>
       </nav>
 
@@ -25,7 +29,9 @@ function App() {
           assignments and important updates in one place.
         </p>
 
-        <button className="start-btn">Get Started</button>
+        <button className="start-btn">
+          Get Started
+        </button>
       </section>
 
       {/* Resources */}
@@ -66,6 +72,9 @@ function App() {
 
         </div>
       </section>
+
+      {/* Login */}
+      <Login />
 
     </div>
   );
