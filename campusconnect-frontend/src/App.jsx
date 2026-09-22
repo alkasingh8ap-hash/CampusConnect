@@ -1,7 +1,11 @@
+import { useState } from "react";
 import Login from "./Login";
 import "./App.css";
 
 function App() {
+
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
     <div className="app">
 
@@ -14,7 +18,7 @@ function App() {
           <a href="#">About</a>
           <a href="#">Contact</a>
 
-          <button>
+          <button onClick={() => setShowLogin(true)}>
             Login
           </button>
         </div>
@@ -74,7 +78,7 @@ function App() {
       </section>
 
       {/* Login */}
-      <Login />
+      {showLogin && <Login />}
 
     </div>
   );
